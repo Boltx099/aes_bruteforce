@@ -1,13 +1,13 @@
 1. Install dependency
 
-```pip3 install pyAesCrypt```
+<pre> pip3 install pyAesCrypt </pre>
 
 2. Save the script above as aes_bruteforce_mp.py and make executable:
 
-```chmod +x aes_bruteforce_mp.py```
+<pre> chmod +x aes_bruteforce_mp.py </pre>
 
 3. run
-```python3 aes_bruteforce_mp.py --aes backup.aes --wordlist /usr/share/wordlists/rockyou.txt --out recovered_archive.zip --workers 6 --checkpoint .aes_ckpt --chunk 400```
+<pre> python3 aes_bruteforce_mp.py --aes backup.aes --wordlist /usr/share/wordlists/rockyou.txt --out recovered_archive.zip --workers 6 --checkpoint .aes_ckpt --chunk 400 </pre>
 
 
 * --workers tune to number of CPU cores (or fewer if disk/CPU thrashes).
