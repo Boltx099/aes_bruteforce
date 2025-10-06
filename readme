@@ -1,20 +1,24 @@
 ```markdown 
 ## Install dependency
+```
 
 ```bash
- pip3 install pyAesCrypt ```
+ pip3 install pyAesCrypt
+```
 
 ```markdown
 ## Save the script above as aes_bruteforce_mp.py and make executable:
-
+```
 ```bash
- chmod +x aes_bruteforce_mp.py ```
+ chmod +x aes_bruteforce_mp.py
+```
 
 ```markdown
 ## run
-
+```
 ```bash
- python3 aes_bruteforce_mp.py --aes backup.aes --wordlist /usr/share/wordlists/rockyou.txt --out recovered_archive.zip --workers 6 --checkpoint .aes_ckpt --chunk 400 ```
+ python3 aes_bruteforce_mp.py --aes backup.aes --wordlist /usr/share/wordlists/rockyou.txt --out recovered_archive.zip --workers 6 --checkpoint .aes_ckpt --chunk 400
+```
 
 
 * --workers tune to number of CPU cores (or fewer if disk/CPU thrashes).
